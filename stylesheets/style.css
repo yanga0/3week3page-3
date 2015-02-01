@@ -102,20 +102,21 @@ a, a:hover, a:visited {
 .button {
   width: 120px;
   text-align: center;
-  padding: 10px 30px;
-  font-size: 18px;
+  padding: 10px 20px;
+  font-size: 16px;
   display: block;
   border-radius: 0;
   margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .fixed {
   position: fixed;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 #top-nav {
   height: 100px;
   padding: 32px 0;
@@ -127,16 +128,43 @@ a, a:hover, a:visited {
   z-index: 99;
 }
 
-/* line 68, ../sass/style.scss */
-#foot {
-  padding: 45px 0;
-}
-/* line 70, ../sass/style.scss */
-#foot .join-trip {
-  background: transparent;
+/* line 69, ../sass/style.scss */
+#services {
+  margin-top: 164px;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
+#foot {
+  padding: 45px 0;
+  background-image: url(../b0.jpeg);
+  background-color: transparent;
+}
+/* line 78, ../sass/style.scss */
+#foot .join-trip {
+  line-height: 40px;
+  color: white;
+  padding: 0 10px 0 50px;
+  overflow: hidden;
+}
+/* line 84, ../sass/style.scss */
+#foot .join-trip i {
+  position: relative;
+  margin-left: 15px;
+  left: 40px;
+}
+/* line 90, ../sass/style.scss */
+#foot .join-trip:hover {
+  padding: 0 20px 0 40px;
+  border-color: rgba(255, 255, 255, 0.5);
+  transition: padding 0.5s, border-color 0.5s ease-out;
+}
+/* line 95, ../sass/style.scss */
+#foot .join-trip:hover i {
+  left: 0;
+  transition: left 0.5s ease-out;
+}
+
+/* line 103, ../sass/style.scss */
 footer {
   background: #111;
   width: 100%;
@@ -145,33 +173,47 @@ footer {
   font-size: 13px;
   font-family: HelveticaNeueLTStd-Roman,Helvetica,Arial,sans-serif;
 }
-/* line 83, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 footer .footer-elements {
   padding: 40px 0 20px;
+  line-height: 20px;
 }
-/* line 86, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 footer .footer-elements .copyright {
   color: #777;
   float: left;
 }
-/* line 91, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
+footer .footer-elements .social {
+  text-align: center;
+  font-size: 16px;
+}
+/* line 124, ../sass/style.scss */
+footer .footer-elements .social .social-link:hover {
+  color: white;
+}
+/* line 127, ../sass/style.scss */
+footer .footer-elements .social .social-link + .social-link {
+  margin-left: 5px;
+}
+/* line 133, ../sass/style.scss */
 footer .footer-elements .site-map {
   float: right;
 }
-/* line 93, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 footer .footer-elements .site-map li {
   color: #CCC;
   display: inline;
   margin-left: 5px;
 }
-/* line 97, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 footer .footer-elements .site-map li a:hover {
   color: white;
   text-decoration: underline;
 }
 
 @media only screen and (min-width: 64em) {
-  /* line 107, ../sass/style.scss */
+  /* line 149, ../sass/style.scss */
   #top-nav {
     position: fixed;
     -webkit-transition: all 0.5s ease-out;
@@ -181,12 +223,12 @@ footer .footer-elements .site-map li a:hover {
     transition: all 0.5s ease-out;
   }
 
-  /* line 116, ../sass/style.scss */
+  /* line 158, ../sass/style.scss */
   .nav-down {
     top: 0;
   }
 
-  /* line 119, ../sass/style.scss */
+  /* line 161, ../sass/style.scss */
   .nav-up {
     top: -70px;
     height: 68px;
