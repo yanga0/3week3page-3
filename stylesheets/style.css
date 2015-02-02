@@ -118,95 +118,184 @@ a, a:hover, a:visited {
 
 /* line 58, ../sass/style.scss */
 #top-nav {
-  height: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  height: 50px;
   padding: 32px 0;
   left: 0;
   overflow: hidden;
+  font-family: HelveticaNeueLTStd-Bd, Helvetica, Arial, sans-serif;
   width: 100%;
-  z-index: 99;
-  transition: top 1s ease-out;
+  z-index: 100;
+  transition: all 0.5s ease-out;
 }
-/* line 67, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 #top-nav.nav-down {
   top: 0;
 }
-/* line 71, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 #top-nav.nav-up {
-  top: -70px;
+  top: -96px;
   height: 68px;
   padding: 14px 0;
 }
-/* line 77, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
+#top-nav.scrolled {
+  height: 28px;
+  padding: 14px 0;
+}
+/* line 86, ../sass/style.scss */
 #top-nav .header-elements #logo {
   color: white;
-  font-size: 20px;
+  font-size: 24px;
 }
-/* line 81, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
+#top-nav .header-elements #logo i {
+  font-size: 24px;
+}
+/* line 93, ../sass/style.scss */
 #top-nav .header-elements ul {
+  padding-top: 5px;
   float: right;
   font-size: 16px;
 }
-/* line 84, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 #top-nav .header-elements ul li {
   display: inline-block;
   margin-left: 10px;
 }
-/* line 87, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 #top-nav .header-elements ul li .nav-link {
   color: white;
 }
-/* line 89, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 #top-nav .header-elements ul li .nav-link span {
   width: 0;
   display: block;
   margin: auto;
   border-bottom: 1px white solid;
 }
-/* line 97, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 #top-nav .header-elements ul li:hover a span {
   width: 100%;
   transition: width 0.5s ease-in;
 }
 
-/* line 109, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 #head {
-  background: rgba(184, 134, 11, 0.2);
+  font-family: HelveticaNeueLTStd-Bd, Helvetica, Arial, sans-serif;
   padding-top: 200px;
   height: 300px;
 }
+/* line 127, ../sass/style.scss */
+#head .hero-title {
+  width: 55%;
+  margin: auto;
+}
+/* line 131, ../sass/style.scss */
+#head h1 {
+  line-height: 2em;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+}
+/* line 138, ../sass/style.scss */
+#head .divider {
+  width: 80px;
+  margin: 20px auto 30px;
+  border-bottom: 3px white solid;
+}
 
-/* line 120, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
+#main {
+  font-family: 'Droid Serif', Georgia, serif;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background: white;
+}
+/* line 151, ../sass/style.scss */
+#main .single-pic {
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  background: url("../abcfbca1.jpeg");
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+}
+/* line 159, ../sass/style.scss */
+#main h2 {
+  font-family: HelveticaNeueLTStd-Bd, Helvetica, Arial, sans-serif;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 36px;
+}
+/* line 165, ../sass/style.scss */
+#main .pics {
+  text-align: center;
+  height: 180px;
+  overflow: hidden;
+}
+/* line 169, ../sass/style.scss */
+#main .pics .pic-quarter {
+  width: 24%;
+  display: inline-table;
+  vertical-align: top;
+}
+/* line 173, ../sass/style.scss */
+#main .pics .pic-quarter img {
+  max-width: 100%;
+}
+/* line 179, ../sass/style.scss */
+#main .text {
+  width: 60%;
+  line-height: 30px;
+  margin: 40px auto 20px;
+  text-align: center;
+  word-spacing: 2px;
+  font-size: 18px;
+}
+/* line 188, ../sass/style.scss */
+#main .line-separator {
+  margin: 40px auto;
+  width: 100%;
+  border-bottom: 1px #ccc solid;
+}
+
+/* line 195, ../sass/style.scss */
 #foot {
   padding: 45px 0;
-  background-image: url(../b0.jpeg);
+  background-image: url(../b1.jpg);
+  background-position: center;
+  background-attachment: fixed;
   background-color: transparent;
 }
-/* line 125, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 #foot .join-trip {
   line-height: 40px;
   color: white;
   padding: 0 10px 0 50px;
   overflow: hidden;
 }
-/* line 131, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 #foot .join-trip i {
   position: relative;
   margin-left: 15px;
   left: 40px;
 }
-/* line 137, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 #foot .join-trip:hover {
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 0 20px 0 40px;
   border-color: rgba(255, 255, 255, 0.5);
   transition: padding 0.5s, border-color 0.5s ease-out;
 }
-/* line 142, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 #foot .join-trip:hover i {
   left: 0;
   transition: left 0.5s ease-out;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 footer {
   background: #111;
   width: 100%;
@@ -215,47 +304,47 @@ footer {
   font-size: 13px;
   font-family: HelveticaNeueLTStd-Roman,Helvetica,Arial,sans-serif;
 }
-/* line 158, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 footer .footer-elements {
   padding: 40px 0 20px;
   line-height: 20px;
 }
-/* line 162, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 footer .footer-elements .copyright {
   color: #777;
   float: left;
 }
-/* line 167, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 footer .footer-elements .social {
   text-align: center;
   font-size: 16px;
 }
-/* line 171, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 footer .footer-elements .social .social-link:hover {
   color: white;
 }
-/* line 174, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 footer .footer-elements .social .social-link + .social-link {
   margin-left: 5px;
 }
-/* line 180, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 footer .footer-elements .site-map {
   float: right;
 }
-/* line 182, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 footer .footer-elements .site-map li {
   color: #CCC;
   display: inline;
   margin-left: 5px;
 }
-/* line 186, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 footer .footer-elements .site-map li a:hover {
   color: white;
   text-decoration: underline;
 }
 
 @media only screen and (min-width: 64em) {
-  /* line 196, ../sass/style.scss */
+  /* line 274, ../sass/style.scss */
   #top-nav {
     position: fixed;
     -webkit-transition: all 0.5s ease-out;
@@ -265,12 +354,12 @@ footer .footer-elements .site-map li a:hover {
     transition: all 0.5s ease-out;
   }
 
-  /* line 205, ../sass/style.scss */
+  /* line 283, ../sass/style.scss */
   .nav-down {
     top: 0;
   }
 
-  /* line 208, ../sass/style.scss */
+  /* line 286, ../sass/style.scss */
   .nav-up {
     top: -70px;
     height: 68px;
