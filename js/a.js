@@ -3,8 +3,8 @@
  */
 
 $('.background').mousemove(function(event) {
-    var top = 50 + (event.clientY - $(Window).height()/2)*3/($(Window).height()/2);
-    var left = 50 + (event.clientX - $(Window).width()/2)*3/($(Window).width()/2);
+    var top = 50 + (event.clientY - $(window).height()/2)*3/($(window).height()/2);
+    var left = 50 + (event.clientX - $(window).width()/2)*3/($(window).width()/2);
     $(this).css({
         "background-position" : "" + left + "% " + top + "%"
     });
