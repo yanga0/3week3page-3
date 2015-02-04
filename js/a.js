@@ -22,5 +22,12 @@ $(window).scroll(function() {
 
     if(currTop < prevTop && nav.hasClass('scrolled')) nav.removeClass('nav-up').addClass('nav-down');
     if(nav.hasClass('scrolled') && nav.hasClass('nav-down') && currTop >= prevTop) nav.removeClass('nav-down').addClass('nav-up');
+
+    if(currTop > 1500) {
+        $('.single-pic-dynamic img').addClass('bright').css('position', 'relative').css('top', "" + (currTop-1500) + "px");
+    }
+    else {
+        $('.single-pic-dynamic img').removeClass('bright').css('top', "0");
+    }
     setTimeout(function(){prevTop = currTop},0);
 });

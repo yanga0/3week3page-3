@@ -1,8 +1,14 @@
 @import "compass/reset";
 @import "compass/css3";
 
+@include font-face("News Cycle", font-files("../news-cycle/newscycle-regular.ttf"));
+@include font-face("News Cycle Bold", font-files("../news-cycle/newscycle-bold.ttf"));
+@include font-face("Libra Sans", font-files("../libra-sans/LibraSans.otf"));
+@include font-face("Libra Sans Bold", font-files("../libra-sans/LibraSans-Bold.otf"));
+
 body {
-	font-size: 62.5%;
+  font-family: Libra Sans, HelveticaNeueLTStd-Bd, Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
 }
 
 a, a:hover, a:visited {
@@ -30,7 +36,7 @@ h1 {
 }
 
 h2 {
-  font-family: HelveticaNeueLTStd-Bd, Helvetica, Arial, sans-serif;
+  font-family: JunctionRegular Libra Sans, HelveticaNeueLTStd-Bd, Helvetica, Arial, sans-serif;
   padding: 40px 0;
   text-align: center;
   font-size: 36px;
@@ -66,11 +72,6 @@ h3 {
   cursor: pointer;
 }
 
-//
-//.background-rotateY {
-//  transform: rotateY(30deg) scale(1.5);
-//  transition: trasform 0.5s;
-//}
 
 .fixed {
   position: fixed;
@@ -82,7 +83,6 @@ h3 {
   padding: 32px 0;
   left: 0;
   overflow: hidden;
-  font-family: HelveticaNeueLTStd-Bd, Helvetica, Arial, sans-serif;
   width: 100%;
   z-index: 100;
   transition: all 0.5s ease-out;
@@ -92,7 +92,6 @@ h3 {
   }
 
   &.nav-up {
-//    background: rgba(184, 134, 11, 0.2);
     top: -96px;
     height: 68px;
     padding: 14px 0;
@@ -141,8 +140,6 @@ h3 {
 }
 
 #head {
-  font-family: HelveticaNeueLTStd-Bd, Helvetica, Arial, sans-serif;
-//  background: rgba(184, 134, 11, 0.2);
   padding-top: 200px;
   height: 300px;
   .hero-title {
@@ -164,11 +161,29 @@ h3 {
 
   .single-pic {
     margin: 0 auto;
-    width: 100%;
-    height: 400px;
+    width: 85%;
+    height: 500px;
     background: url("../abcfbca1.jpeg");
     background-position: 50% 60%;
     background-repeat: no-repeat;
+  }
+
+  .single-pic-dynamic {
+    height: 600px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+  }
+
+  .bright {
+    filter: brightness(1.2);
+    -webkit-filter: brightness(1.2);
+    -moz-filter: brightness(1.2);
   }
 
   .pics {
@@ -224,6 +239,9 @@ h3 {
           h3 {
             transform: rotate(45deg);
           }
+        }
+
+        &:hover {
         }
       }
     }
@@ -331,7 +349,6 @@ footer {
 
 @media only screen and (min-width: 64em) {
   #top-nav {
-//    background: greenyellow;
     position: fixed;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
